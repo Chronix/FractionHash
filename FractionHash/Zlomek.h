@@ -30,7 +30,7 @@ class Zlomek { int a,b;
             return v;
           }
           void operator () () {
-            cout << a << '/' << b << endl;
+            cout << a << '/' << b;
           }
 
 		  Zlomek& Zkratit()

@@ -1,12 +1,8 @@
-#ifndef PURE
-#define PURE = 0
-#endif
-
 template<class T, int N>
 class Hash
 {
 public:
-	virtual unsigned h(T& entry) PURE;
+	virtual unsigned h(T& entry)=0;
 	bool operator <<(T& entry);
 	bool operator +=(T& entry);
 	bool operator -=(T& entry);
